@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="registration.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Student Registration Form</h2>
+
+    <form id="registrationForm">
+
+        <!-- First Name -->
+        <div class="input-box">
+            <label>First Name</label>
+            <input type="text" id="fname" placeholder="Enter First Name">
+            <small id="fnameError"></small>
+        </div>
+
+        <!-- Last Name -->
+        <div class="input-box">
+            <label>Last Name</label>
+            <input type="text" id="lname" placeholder="Enter Last Name">
+            <small id="lnameError"></small>
+        </div>
+
+        <!-- Date of Birth -->
+        <div class="input-box">
+            <label>Date of Birth</label>
+            <input type="date" id="dob">
+            <small id="dobError"></small>
+        </div>
+
+        <!-- Gender -->
+        <div class="input-box">
+            <label>Gender</label>
+
+            <div class="gender">
+                <input type="radio" name="gender" value="Male"> Male
+                <input type="radio" name="gender" value="Female"> Female
+                <input type="radio" name="gender" value="Other"> Other
+            </div>
+
+            <small id="genderError"></small>
+        </div>
+
+        <!-- Qualification -->
+        <div class="input-box">
+            <label>Educational Qualification</label>
+
+            <select id="qualification">
+                <option value="">Select Qualification</option>
+                <option>SSC</option>
+                <option>Intermediate</option>
+                <option>Diploma</option>
+                <option>B.Tech</option>
+                <option>B.Sc</option>
+                <option>B.Com</option>
+                <option>M.Tech</option>
+                <option>MBA</option>
+                <option>MCA</option>
+                <option>Ph.D</option>
+            </select>
+
+            <small id="qualificationError"></small>
+        </div>
+
+        <!-- Educational Details -->
+        <div class="input-box">
+            <label>Educational Details</label>
+            <textarea id="details" rows="4"></textarea>
+            <small id="detailsError"></small>
+        </div>
+
+        <!-- Photo -->
+        <div class="input-box">
+            <label>Passport Size Photo</label>
+            <input type="file" id="photo" accept=".jpg,.jpeg,.png">
+            <small id="photoError"></small>
+        </div>
+
+        <!-- Signature -->
+        <div class="input-box">
+            <label>Upload Signature</label>
+            <input type="file" id="signature" accept=".jpg,.jpeg,.png">
+            <small id="signatureError"></small>
+        </div>
+
+        <div class="buttons">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+
+    </form>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
